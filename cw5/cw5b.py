@@ -26,7 +26,7 @@ class BicycleDecorator:
     def name(self):
         return self.decorated.name
 
-    # property pozwala na odwoływanie się do metody tak jak do atrybutu
+    # 'property' pozwala na odwoływanie się do metody tak jak do atrybutu
     # >>>obj.price
     # jest równoznaczne z wywołaniem
     # >>>obj.price()   
@@ -87,6 +87,9 @@ class ConfigurationWindow(Frame):
     z wykorzystaniem dekoratorów
     """
     def __init__(self, parent, frames, forks, wheelsets, groups, components):
+        """
+        inicjalizacja obiektu okna - nieistotne dla idei zdania
+        """
         super(ConfigurationWindow, self).__init__(parent)
         self._bike = None
         self.parent = parent
@@ -162,17 +165,21 @@ class ConfigurationWindow(Frame):
         obiektu klasy 'Frame'
         """
         frame = self.frames[self.frame_choice.get()]
+        
         fork = self.forks[self.fork_choice.get()]
         fork.decorated = frame
+        
         wheelset = self.wheelsets[self.wheelset_choice.get()]
         wheelset.decorated = fork
+        
         group = self.groups[self.group_choice.get()]
         group.decorated = wheelset
+        
         components = self.components[self.components_choice.get()]
         components.decorated = group
-
-        # przypisanie wartości odpowiednim elementom GUI
         self._bike = components
+
+        # przypisanie wartości odpowiednim elementom GUI       
         self._bike_price.set("cena: " + str(self._bike.price) + "zł")
         self._bike_weight.set("waga: " + str(self._bike.weight) + " gr")
         self._bike_travel.set("skok: " + str(self._bike.travel) + " mm")
@@ -180,6 +187,7 @@ class ConfigurationWindow(Frame):
         # uaktualnienie okna
         self.price_label.update_idletasks()
         self.weight_label.update_idletasks()
+        # zmiana tytułu okna
         self.parent.wm_title(self._bike.name)
         
     
