@@ -18,6 +18,7 @@ class OrderManager:
     def log(self):
         self.__logger.log()
         self.__db.insert()
+        print("...")
         
     def recieve(self, order):
         self.__order = order
@@ -97,7 +98,9 @@ class Order(Colleague):
         if self.__state in ("Initial", "Recievied"):
             self._mediator.accept()
         return self.__state == "Accepted"
-        
+
+    def complete(self):
+        self._mediator.complete()        
 
     def set_state(self, state):
         self.__state = state
@@ -200,9 +203,9 @@ def test():
     manager.recieve(order)
 
     t = order.is_valid()
-    print("Is order valid: %r" % t)
+    print("Order is valid: %r" % t)
     
-    manager.complete()
+    order.complete()
     
 if __name__ == "__main__":
     test()
