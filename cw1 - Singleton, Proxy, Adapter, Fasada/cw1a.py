@@ -1,3 +1,12 @@
+"""
+Treść zadania:
+
+Prosze zaimplementowac dowolna klase z ukrytym konstruktorem i
+jedna dowolna operacja. Stworzyc instancje tej klasy i wywolac jej metode.
+"""
+
+
+
 """wersja 1 - sigleton "funkcyjny" """
 """Definicja dekoratora przechowującego, którego kluczami
 są klasy a wartościami odpowiadające im instancje"""

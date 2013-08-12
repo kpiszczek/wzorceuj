@@ -1,3 +1,36 @@
+"""
+Treść zadania:
+
+Mamy nastepujaca hierarchie klas czesci samochodowych.  Przepraszam za
+forme, ale nie znalazlam mozliwosci wyslania zalacznika przez.
+
+             -----------------------------
+             |  AutoPart                  |
+             -----------------------------
+             |fabricationCost()           |
+             |fabricationTime()           |
+             |avgUsageTime()              |
+             |yearlyCost()                |
+             ------------------------------
+              |         |           |
+  ---------------   --------------  ---------
+ | ElectricalPart| |SuspentionPart| |BodyPart|
+  ---------------   --------------  ---------
+
+Klasy pochodne maja te same metody co klasa bazowa.
+
+Prosze zaprojektowac hierarchie klas Visitor pozwalajaca na obliczenie
+- kosztu produkcji,
+- czasu produkcji,
+- sredniego czasu do zuzycia,
+- sredniego kosztu eksploatacji na rok
+
+kazdej z czesci samochodu. Prosze o zaimplementowanie funkcji main,
+ktory pokaze jak takich klas uzywac.
+Dodam, ze podpowiedz mozna znalezc w internecie:)
+"""
+
+
 #######################
 # Klasy odwiedzających
 #######################

@@ -1,3 +1,11 @@
+"""
+Treść zadania:
+
+Na bazie wzorca dekoratora zaprojektuj mini system do
+konfiguracji rowerow.
+"""
+
+
 from tkinter import Tk, Frame, BOTH, OptionMenu, StringVar, Label
 
 

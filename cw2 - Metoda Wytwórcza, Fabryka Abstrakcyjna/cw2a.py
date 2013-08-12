@@ -1,3 +1,20 @@
+"""
+Treść zadania:
+
+Prosze zaprojektowac nastepujaca hierarchie klas:
+Abstrakcyjna klasa bazowa Shape.  Klasy pochodne: Square, Rectangle,
+Triange z konstruktorami i metoda draw().
+Metoda draw() nie musi ladnie rysowac danej figury geometrycznej, ale
+jakos ja powinna prezentowac na ekranie.
+Nastepnie do kazdej klasy prosze napisac klasy ShapeCreator,
+RectangleCreator etc z metodami factory(), implementujace wzorzec
+Factory Method.
+
+W funkcji main utworz po kilka obiektow klas Rectangle i Triangle a
+nastepnie wywolaj draw() dla kazdego z obiektow.
+"""
+
+
 import abc
 import math
 

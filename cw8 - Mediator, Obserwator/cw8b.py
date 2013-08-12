@@ -1,3 +1,11 @@
+"""
+Treść zadania:
+
+Przeprojektuj program z zadania 5a tak, zeby uzywal wzorca
+Obserwator.
+"""
+
+
 class Observer:
     """
     Observer

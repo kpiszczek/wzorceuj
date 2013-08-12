@@ -1,3 +1,14 @@
+"""
+Treśc zadania:
+
+Prosze zaimplementowac klase abstrakcyjna (interfejs) User (z
+nastepujacymi metodami get/setName(); get/setSurname(); add(); remove()).
+Nastepnie prosze stwozyc klase RealClient iplementujaca powyzszy
+inferfejs. Na koniec prosze odpowiednie doimplementowac do tego klase
+ProxyClient z odpowiednimi metodami.
+"""
+
+
 # abc - Abstract Base Classes
 import abc
 
@@ -42,6 +53,8 @@ class RealClient(User):
 
 class MaxActiveUsersReached(Exception):
     pass
+
+
 """klasa pośrednika ogranicza ilość obsługiwanych klientów oraz
 możliwość dodawania/usuwania atrybutów w zależności od trybu pracy"""
 class ProxyClient(User):

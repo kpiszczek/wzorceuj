@@ -1,6 +1,41 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+"""
+Treść zadania:
+
+Wyobrazmy sobie aplikacje typu USOS, do ktorej moga logowac sie
+zarowno studenci jak i administratorzy. Lista uprawnien/ przyciskow
+jest inna w przypadku administratorow a inna dla studentow jak rowniez
+inne jest tzw ‘Welcome  Message’.
+Stworz nastepujaca hierarchie klas:
+Klasa FormBuilder z metoda constructForm (uzywajaca do stworzenia
+formatki ponizszych klas/metod:
+Klasa abstrakcyjna ButtonsBuilder definiujaca interface addButtons().
+Jej klasy pochodne StudentsButtonsBuilder, AdminButtonsBuilder
+Klasa abstrakcyjna  WelcomeMessageBuilder definiujaca interface printWM().
+Jej klasy pochodne StudentsWMBuilder, AdminWMBuilder
+Potrzebna bedzie tez klasa Form reprezentujaca formatke aplikacji
+zawierajaca pole odpowiadajace WelcomeMessage oraz jakas strukture
+danych przechowujaca liste dostepnych przyciskow.
+
+class FormBuilderExample {
+  public static void main(String[] args) {
+    FormBuilder fBuilder = new FormBuilder ();
+    StudentsButtonsBuilder bBuilder = new StudentsButtonsBuilder();
+    StudentsWMBuilder wmBuilder= new StudentsWMBuilder ();
+
+    fBuilder.setButtonsBuilder(bBuilder);
+    fBuilder.setWMBuilder(wmBuilder);
+
+    fBuilder.constructForm();
+
+    Form form = fBuilder.getForm();
+  }
+}
+"""
+
+
 import abc
 from tkinter import Tk, Frame, Label, Button
 

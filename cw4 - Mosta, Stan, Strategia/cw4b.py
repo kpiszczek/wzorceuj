@@ -1,3 +1,13 @@
+"""
+Treść zadania:
+
+Wybierz 3 algorytmy sortowania (na przykład sortujące
+tablice liczb). Stworz odpowiadające im trzy klasy implementujące te
+algorytmy oraz abstrakcyjna klase nadrzedna definiujaca tylko interface.
+Pokaz przykład uzycia takiej ‘konstrukcji’.
+"""
+
+
 import types
 from copy import copy
 from random import randrange, randint

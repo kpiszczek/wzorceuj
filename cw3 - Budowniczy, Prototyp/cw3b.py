@@ -1,6 +1,44 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+"""
+Treść zadania:
+
+Utworz abstrakcyjna klase Multimedia z deklaracja matody
+clone() oraz toString(); jezeli chodzi o pola to powinna zawierac
+przynajmniej nazwe (np domyslna) jak i typ obiektu. Prosze dodac
+przynajmniej jedno pole wskaznikowe (C++) lub jego odpowiednik tak,
+zeby konieczne bylo stworzenie deep copy obiektu przy klonowaniu.
+Nastepnie utworz klasy do niej pochodne Picture, Music, Movie.
+Klasy powinny zadzialac z ponizszym kodem.
+
+int main(){
+        std::vector<Multimedia*> my_multimedia;
+        my_multimedia.push_back(new Picture);
+        my_multimedia.push_back(new Music);
+        my_multimedia.push_back(new Movie);
+
+        std::vector<Multimedia*> multimedia_copy;
+
+      for(std::vector<Multimedia*>::iterator it =
+my_multimedia.begin();
+          it != my_multimedia.end();
+          ++it)
+      {
+                multimedia_copy.push_back( (*it)->clone() );
+      }
+      for(std::vector<Multimedia*>::iterator it2 =
+my_multimedia.begin();
+          it2 != my_multimedia.end();
+          ++it2)
+      {
+                (*it2)->toString();
+      }
+      return 0;
+}
+"""
+
+
 import abc
 import copy
 from random import random

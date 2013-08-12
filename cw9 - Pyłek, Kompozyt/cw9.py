@@ -1,3 +1,13 @@
+"""
+Treść zadania:
+
+Zaimplementuj program laczacy wykorzystanie wzorca
+Flyweight i Composite.
+Wskazowki m.in. tutaj
+http://www.boost.org/doc/libs/1_53_0/libs/flyweight/doc/examples.html#example3
+"""
+
+
 ##
 ## interpretacja przykładu użycia wzorca Composite z książki
 ## "C# 3.0 Design Patterns" wyd. O'Reilly

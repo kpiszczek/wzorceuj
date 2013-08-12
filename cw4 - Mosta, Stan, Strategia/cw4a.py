@@ -1,3 +1,19 @@
+"""
+Treść zadania:
+
+Mamy trzy rozne rodzaje reprezentacji danych w pliku: XML, CSV oraz
+FIXED length (dla ostatniego rodzaju zalozmy ze wszystkie pola maja
+dlugosc 8).
+Zaimplementuj program, ktory umozliwi zapisywanie danych dotyczacych
+kilku wybranych rodzajow formatow dat (np YYYYMMDD, MMDDYYYY, DDMMYY -
+nie bierzemy pod uwage separatorow) dla trzech powyzszych rodzajow
+reprezentacji danych w pliku.
+Na szczycie hierarchii klas powinny sie znajdowac
+DateFormat (m.in. z metoda write()) oraz OutputFile z metodami
+writeXML(), writeCSV(), writeFIDEX().
+"""
+
+
 import abc
 import datetime
 from collections import namedtuple

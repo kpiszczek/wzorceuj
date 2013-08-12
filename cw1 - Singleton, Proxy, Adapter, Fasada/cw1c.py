@@ -1,3 +1,17 @@
+"""
+Treść zadania:
+
+Prosze zaimplementowac klase LegacyCar, ktora zawiera informacje o
+swoim polozeniu (X, Y) i posiada metode drive(X1, Y1) - zmieniajaca
+polozenie samochodu na mapie o wektor (X1, Y1).
+Nastepnie stworzyc klase Racetrack ktora zawierac bedzie liste
+obiektow Vehicle (klasa Vehicle posiada metode moveTo(X2, Y2), ktora
+przesuwa pojazd do podanego polozenia). Prosze w implementacji klasy
+Vehicle wykorzystac klase LegacyCar w taki sposob, zeby uniknac
+duplikacji kodu.
+"""
+
+
 """abc - Abstract Base Classes """
 import abc
 

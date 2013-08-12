@@ -1,3 +1,17 @@
+"""
+Treść zadania:
+
+Mamy pewnien zbior klas GUI, ktore musza miec zdefiniowany
+sposob na propagacje
+zdarzenia typu "mouse_click" od tego obiektu, w ktorym zdarzenie mialo
+miejsce a nastepnie do obiektow, ktore rzeczywiscie beda zdarzenie
+obslugiwaly.
+Moze tez sie zdarzyc, ze dany obiekt obsluguje wydarzenie i przekazuje
+je wyzej do dalszej 'obrobki'. Zaprojektuj przykladowy zbior takich
+klas i pokaz jak moga obslugiwac zdarzenia "lancuchowo".
+"""
+
+
 class Event:
     """
     Zdarzenie

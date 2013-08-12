@@ -1,6 +1,22 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+"""
+Treść zadania:
+
+Wyobrazmy sobie, ze mamy bardzo prosty system do obslugi zakupu
+instrumentow bankowych. Zakladamy, ze klient moze kupic/sprzedac
+dowolna ilosc danego instrumentu finansowego (pod warunkiem, ze
+instrument jest zarejestrowany w systemie). W systemie istnieja
+nastepujace klasy (z metodami).  ManagementSystem(addClient(...),
+removeClient(...), printClientsInstruments(...)),
+Client(buyInstrument(...), sellInstrument(...)), Instrument
+(register(...), unregister(...)).
+Prosze zaprojektowac wewnetrzna strukture tych klas oraz dodac
+odpowiednie parametry do metod. Nastepnie prosze sworzyc klase API,
+ktora bedzie udostepniala wszystkie powyzsze metody "na zewnatrz".
+"""
+
 #Fasada
 def singleton(cls):
     instances = dict()
